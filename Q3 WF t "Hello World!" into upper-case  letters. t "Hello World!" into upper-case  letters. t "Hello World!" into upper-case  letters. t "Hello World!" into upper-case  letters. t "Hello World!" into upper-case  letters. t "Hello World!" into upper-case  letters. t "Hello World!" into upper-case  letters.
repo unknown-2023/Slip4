@@ -1,0 +1,20 @@
+Create a Node.js file that will convert the output "Hello World!" into upper-case letters. //npm install upper-case
+
+var http = require('http'); 
+ var uc=require('upper-case');
+ http.createServer(function(req, res)
+ {
+res.writeHead (200, {'Content-type': 'text/html'});
+res.write(uc.upperCase('Hello World'));
+; }).listen(8001);
+res.end()
+console.log('Web Server 8000 Started');
+---------------------------------------------------------------------------------------------------
+Execution Steps -
+1) Ensure you have Node.js and npm (Node Package Manager) installed on your system. 
+2) Save the corrected code to a file named uppercase.js.
+3) Open your terminal or command prompt and navigate to the directory where uppercase.js is located.
+4) Run the following command to install the upper-case module: npm install upper-case
+5) Once the installation is complete, you can execute the code by running the following command: node uppercase.js
+6) You should see the message "Web Server on Port 8001 Started" in the console.
+7) You can access the web server by opening a web browser and visiting http://localhost:8001.
